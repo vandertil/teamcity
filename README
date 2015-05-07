@@ -1,0 +1,10 @@
+Use the following environment variables to configure the database connection:
+
+From container linking:
+$POSTGRES_PORT_5432_TCP_ADDR
+$POSTGRES_PORT_5432_TCP_PORT
+
+Custom env:
+$POSTGRES_DATABASE
+$POSTGRES_USER_USERNAME
+$POSTGRES_USER_PASSWORD
