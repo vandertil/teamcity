@@ -1,11 +1,6 @@
 FROM vandertil/baseimage-java8
 MAINTAINER Jos van der Til <jos@vandertil.net>
 
-ENV DEBIAN_FRONTEND noninteractive
-
-# Speed up APT
-RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup ; echo "Acquire::http {No-Cache=True;};" > /etc/apt/apt.conf.d/no-cache
-
 RUN apt-get update
 RUN apt-get install -q -y git wget ; apt-get clean ; apt-get autoclean
 
