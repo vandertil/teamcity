@@ -19,7 +19,7 @@ VOLUME /usr/local/teamcity-data
 ENV TEAMCITY_DATA_PATH /usr/local/teamcity-data
 
 RUN mkdir -p /etc/service/teamcity
-ADD start.sh /etc/service/teamcity/run
+ADD teamcity.sh /etc/service/teamcity/run
 RUN chmod +x /etc/service/teamcity/run
 
 ADD enable-https.sh $TEAMCITY_INSTALL_DIR/TeamCity/enable-https.sh
