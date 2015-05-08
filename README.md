@@ -18,7 +18,10 @@ Quick Start
 Known Issues
 ------------
 Exposes passwords through environment variables.
-Care should be taken when running agents in the same containers as the server, or using container linking. These methods expose the environment variables through the web interface.
+Care should be taken when running agents in the same container as the server, or using container linking. These methods expose the environment variables through the web interface.
+
+PostgreSQL has synchronous commits enabled, which can be disabled to increase the performance of TeamCity. TeamCity will show a warning about this.
+Workaround: Edit the postgresql.conf file in /var/lib/postgresql/data in the data container according to the advice in: https://confluence.jetbrains.com/display/TCD9/How+To...#HowTo...-ConfigureNewlyInstalledPostgreSQLServer
 
 Configuration using Nginx as a proxy
 ------------------------------------
