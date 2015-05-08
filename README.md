@@ -14,3 +14,8 @@ Quick Start
 1. Clone the baseimage repository (https://github.com/vandertil/baseimage-java8) and run build.sh
 2. Clone this repository and run build.sh
 3. Run run.sh
+
+Known Issues
+------------
+Exposes passwords through environment variables.
+Care should be taken when running agents in the same containers as the server, or using container linking. These methods expose the environment variables through the web interface.
