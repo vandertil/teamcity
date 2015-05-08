@@ -1,6 +1,4 @@
 #!/bin/sh
-HTTPS_ENABLED="false"
-
 docker run -t -d -p 8111:8111 \
   --name teamcity \
   --volumes-from=teamcity-data \
