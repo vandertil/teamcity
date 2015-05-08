@@ -1,5 +1,5 @@
 Dockerized TeamCity with PostgreSQL and data container
-------------------------------------------------------
+======================================================
 Uses PostgreSQL as the database engine and stores all the data (both teamcity artifacts and databases) in a data only container.
 
 The data container already contains a set of default plugins:
@@ -10,7 +10,7 @@ The data container already contains a set of default plugins:
 For customization of port bindings, database password, and HTTPS edit run.sh
 
 Quick Start
-===========
+-----------
 1. Clone the baseimage repository (https://github.com/vandertil/baseimage-java8) and run build.sh
 2. Clone this repository and run build.sh
 3. Run run.sh
