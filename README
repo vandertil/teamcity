@@ -1,10 +1,16 @@
-Use the following environment variables to configure the database connection:
+Dockerized TeamCity with PostgreSQL and data container
+------------------------------------------------------
+Uses PostgreSQL as the database engine and stores all the data (both teamcity artifacts and databases) in a data only container.
 
-From container linking:
-$POSTGRES_PORT_5432_TCP_ADDR
-$POSTGRES_PORT_5432_TCP_PORT
+The data container already contains a set of default plugins:
+- Octopus Deploy
+- Azure Cloud Agents
+- GitHub integration
 
-Custom env:
-$POSTGRES_DATABASE
-$POSTGRES_USER_USERNAME
-$POSTGRES_USER_PASSWORD
+For customization of port bindings, database password, and HTTPS edit run.sh
+
+Quick Start
+===========
+1. Clone the baseimage repository (https://github.com/vandertil/baseimage-java8) and run build.sh
+2. Clone this repository and run build.sh
+3. Run run.sh
