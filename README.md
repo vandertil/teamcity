@@ -12,8 +12,8 @@ For customization of port bindings, database password, and HTTPS edit run.sh
 Quick Start
 -----------
 1. Clone the baseimage repository (https://github.com/vandertil/baseimage-java8) and run build.sh
-2. Clone this repository and run build.sh
-3. Run run.sh
+2. Clone this repository, go into src/, and run build.sh
+3. Run start.sh
 
 Known Issues
 ------------
