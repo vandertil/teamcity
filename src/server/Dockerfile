@@ -1,4 +1,4 @@
-FROM vandertil/baseimage-java8
+FROM vandertil/baseimage-java:latest-java8
 MAINTAINER Jos van der Til <jos@vandertil.net>
 
 RUN apt-get update
