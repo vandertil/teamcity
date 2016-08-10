@@ -9,7 +9,7 @@ RUN adduser --disabled-password --system --no-create-home --shell /bin/sh teamci
 
 ENV TEAMCITY_INSTALL_DIR /usr/local
 ENV TEAMCITY_DATA_PATH /usr/local/teamcity-data
-ENV TEAMCITY_PACKAGE TeamCity-10.0.tar.gz
+ENV TEAMCITY_PACKAGE TeamCity-10.0.1.tar.gz
 
 RUN wget -q -O - http://download.jetbrains.com/teamcity/$TEAMCITY_PACKAGE | tar -C $TEAMCITY_INSTALL_DIR -xzf -
 
