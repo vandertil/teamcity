@@ -9,7 +9,7 @@ RUN mkdir -p $TEAMCITY_DATA_PATH/plugins
 RUN mkdir -p $TEAMCITY_DATA_PATH/lib/jdbc
 RUN mkdir -p $TEAMCITY_DATA_PATH/config
 
-RUN wget http://download.octopusdeploy.com/octopus-teamcity/2.5.4.35/Octopus.TeamCity.zip -O $TEAMCITY_DATA_PATH/plugins/Octopus.TeamCity.zip
+RUN wget https://download.octopusdeploy.com/octopus-teamcity/4.11.0/Octopus.TeamCity.zip -O $TEAMCITY_DATA_PATH/plugins/Octopus.TeamCity.zip
 
 RUN wget http://jdbc.postgresql.org/download/postgresql-9.4-1201.jdbc41.jar -O $TEAMCITY_DATA_PATH/lib/jdbc/postgresql-9.4-1201.jdbc41.jar
 RUN wget http://teamcity.jetbrains.com/guestAuth/repository/download/TeamcityAzurePlugin_Build/lastPinned/azure-cloud.zip -O $TEAMCITY_DATA_PATH/plugins/azure-cloud.zip
