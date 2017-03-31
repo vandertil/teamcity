@@ -11,7 +11,7 @@ RUN mkdir -p $TEAMCITY_DATA_PATH/config
 
 RUN wget https://download.octopusdeploy.com/octopus-teamcity/4.11.0/Octopus.TeamCity.zip -O $TEAMCITY_DATA_PATH/plugins/Octopus.TeamCity.zip
 
-RUN wget http://jdbc.postgresql.org/download/postgresql-9.4-1201.jdbc41.jar -O $TEAMCITY_DATA_PATH/lib/jdbc/postgresql-9.4-1201.jdbc41.jar
+RUN wget https://jdbc.postgresql.org/download/postgresql-42.0.0.jar -O $TEAMCITY_DATA_PATH/lib/jdbc/postgresql-42.0.0.jar
 RUN wget http://teamcity.jetbrains.com/guestAuth/repository/download/bt398/lastest.lastSuccessful/teamcity.github.zip -O $TEAMCITY_DATA_PATH/plugins/teamcity.github.zip
 
 VOLUME /usr/local/teamcity-data
