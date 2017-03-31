@@ -9,7 +9,7 @@ RUN apt-get update -qq \
 
 ENV TEAMCITY_INSTALL_DIR /usr/local
 ENV TEAMCITY_DATA_PATH /usr/local/teamcity-data
-ENV TEAMCITY_PACKAGE TeamCity-10.0.2.tar.gz
+ENV TEAMCITY_PACKAGE TeamCity-10.0.5.tar.gz
 
 RUN wget -q -O - http://download.jetbrains.com/teamcity/$TEAMCITY_PACKAGE | tar -C $TEAMCITY_INSTALL_DIR -xzf - \
  && chown -R teamcity:nogroup $TEAMCITY_INSTALL_DIR/TeamCity \
